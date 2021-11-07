@@ -6,8 +6,8 @@
 
 <body>
     <h1>单点登录系统</h1>
-    <a href="/app1">系统A</a>
-    <a href="/app2">系统B</a>
+    <a href="/system-a/">系统A</a>
+    <a href="/system-b/">系统B</a>
     <%
         String username = "尚未登录";
         Cookie[] cookies = request.getCookies();

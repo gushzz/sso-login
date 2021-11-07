@@ -25,6 +25,8 @@
     <dependency>
       <groupId>guandyin</groupId>
       <artifactId>sso-server</artifactId>
+      
+    <type>pom</type>
       <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
