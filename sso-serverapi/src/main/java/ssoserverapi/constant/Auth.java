@@ -1,4 +1,4 @@
-package constant;
+package ssoserverapi.constant;
 
 public interface Auth {
     // 登录中心url

@@ -1,5 +1,3 @@
 F:\tempWork\guge\sso-login\sso-server\src\main\java\ssoserver\ServletLogin.java
-F:\tempWork\guge\sso-login\sso-server\src\main\java\entity\TokenInfo.java
-F:\tempWork\guge\sso-login\sso-server\src\main\java\filter\LoginFilter.java
-F:\tempWork\guge\sso-login\sso-server\src\main\java\constant\Auth.java
-F:\tempWork\guge\sso-login\sso-server\src\main\java\util\JwtUtil.java
+F:\tempWork\guge\sso-login\sso-server\src\main\java\ssoserver\ServletLogout.java
+F:\tempWork\guge\sso-login\sso-server\src\main\java\ssoserver\ServletToLogin.java

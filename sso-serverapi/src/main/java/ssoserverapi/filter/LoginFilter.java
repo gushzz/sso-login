@@ -1,8 +1,8 @@
-package filter;
+package ssoserverapi.filter;
 
-import constant.Auth;
-import entity.TokenInfo;
-import util.JwtUtil;
+import ssoserverapi.constant.Auth;
+import ssoserverapi.entity.TokenInfo;
+import ssoserverapi.util.JwtUtil;
 
 import javax.servlet.*;
 import javax.servlet.http.Cookie;

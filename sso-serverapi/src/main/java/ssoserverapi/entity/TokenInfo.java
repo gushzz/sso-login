@@ -1,4 +1,4 @@
-package entity;
+package ssoserverapi.entity;
 
 public class TokenInfo {
     private String username;

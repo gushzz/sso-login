@@ -3,11 +3,13 @@
   xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>guandyin</groupId>
     <artifactId>sso-login</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
+
   <groupId>guandyin</groupId>
   <artifactId>system-a</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -24,11 +26,12 @@
     
     <dependency>
       <groupId>guandyin</groupId>
-      <artifactId>sso-server</artifactId>
-      <type>pom</type>
+      <artifactId>sso-serverapi</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
   </dependencies>
+  
   <build>
     <finalName>system-a</finalName>
   </build>

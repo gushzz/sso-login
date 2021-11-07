@@ -1,4 +1,4 @@
-package util;
+package ssoserverapi.util;
 
 import com.auth0.jwt.JWTSigner;
 import com.auth0.jwt.JWTVerifier;
