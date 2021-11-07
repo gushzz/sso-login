@@ -1,9 +1,8 @@
 package ssoserver;
 
-
-import com.group.ssoclient.constant.Auth;
-import com.group.ssoclient.entity.TokenInfo;
-import com.group.ssoclient.util.JwtUtil;
+import constant.Auth;
+import entity.TokenInfo;
+import util.JwtUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,17 +13,19 @@ import java.io.IOException;
 
 @WebServlet("/login")
 public class ServletLogin extends javax.servlet.http.HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
         String username = request.getParameter("username");
-        if ("".equals(username.trim())){
+
+        if (username == null || "".equals(username.trim())) {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
 
         TokenInfo tokenInfo = new TokenInfo();
         tokenInfo.setUsername(username);
 
-        String clientUrl = request.getParameter(Auth.CLIENT_URL);       // 目标地址
+        String clientUrl = request.getParameter(Auth.CLIENT_URL); // 目标地址
 
         String encode = JwtUtil.encode(tokenInfo);
         Cookie token = new Cookie(Auth.TOKEN, encode);
@@ -44,6 +45,8 @@ public class ServletLogin extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         doPost(request, response);
+
     }
 }

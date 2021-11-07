@@ -28,13 +28,16 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <version>3.1.0</version>
             <artifactId>servlet-api</artifactId>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
-            <version>3.1.0</version>
             <artifactId>javaee-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>2.2.0</version>
         </dependency>
     </dependencies>
 
