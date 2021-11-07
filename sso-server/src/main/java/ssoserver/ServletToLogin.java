@@ -1,6 +1,6 @@
 package ssoserver;
 
-import constant.Auth;
+import ssoserverapi.constant.Auth;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

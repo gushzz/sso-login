@@ -6,7 +6,7 @@
         <artifactId>sso-login</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>guandyin</groupId>
+
     <artifactId>sso-server</artifactId>
 
     <packaging>war</packaging>
